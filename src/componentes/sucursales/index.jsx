@@ -4,7 +4,7 @@ const contentContainerStyle = {
   display: "flex",
   flexDirection: "column",
   justifyContent: "space-between",
-  alignItems: "center", // Centra verticalmente
+  alignItems: "center",
   marginBottom: "100px",
 };
 
