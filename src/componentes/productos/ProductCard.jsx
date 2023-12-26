@@ -6,14 +6,14 @@ const cardStyle = {
   borderRadius: "8px",
   padding: "10px",
   margin: "10px",
-  width: "200px", // Ancho de la tarjeta, ajusta según sea necesario
+  width: "200px",
 };
 
 const imageStyle = {
-  width: "100%", // La imagen ocupa el 100% del ancho de la tarjeta
-  height: "auto", // Altura automática para mantener la proporción
+  width: "100%",
+  height: "auto",
   marginBottom: "10px",
-  borderRadius: "8px", // Bordes redondeados
+  borderRadius: "8px",
 };
 
 const ProductCard = ({ id, title, price, description, category, images }) => {

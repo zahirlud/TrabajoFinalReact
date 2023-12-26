@@ -9,11 +9,31 @@ const CarritoCard = ({ carrito }) => {
     console.log(e);
   };
 
+  const buttonStyle = {
+    cursor: "pointer",
+  };
+
+  const productoItemStyle = {
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    border: "1px solid #ccc",
+    padding: "10px",
+    marginBottom: "10px",
+  };
+
+  const carritoContainerStyle = {
+    maxWidth: "600px",
+    margin: "auto",
+    flexDirection: "column",
+    alignItems: "center",
+  };
+
   return (
-    <div>
-      <h1>Mi Carrito</h1>
+    <div style={carritoContainerStyle}>
+      <h1 style={{ alignItems: "center" }}> Mi Carrito</h1>
       {carrito.map((item, index) => (
-        <div key={index}>
+        <div style={productoItemStyle} key={index}>
           <p>{item.name}</p>
           <p>Precio: {item.price}</p>
           <p>Cantidad: {item.quantity}</p>
@@ -24,7 +44,7 @@ const CarritoCard = ({ carrito }) => {
       ))}
       {carrito.length > 0 && (
         <h2>
-          <button>Finalizar Compra</button>
+          <button style={buttonStyle}>Finalizar Compra</button>
         </h2>
       )}
     </div>

@@ -89,23 +89,21 @@ const Register = () => {
   );
 };
 
-// Estilos para el contenedor del formulario
 const formContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh", // Ajusta la altura según tus necesidades
-  overflowY: "auto", // Habilita el desplazamiento vertical
-  padding: "20px", // Agregado un relleno al contenedor
+  height: "100vh",
+  overflowY: "auto",
+  padding: "20px",
 };
 
-// Estilos para el formulario
 const formStyle = {
   border: "1px solid #ccc",
   padding: "20px",
   borderRadius: "8px",
 };
-// Estilos para los campos de entrada (inputs)
+
 const inputStyle = {
   display: "block",
   width: "100%",

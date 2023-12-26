@@ -60,45 +60,42 @@ const Header = () => {
   );
 };
 
-// Estilos para el header y sus secciones
 const headerStyle = {
-  display: "flex", // Hace que los elementos hijos se coloquen en una fila (horizontal) debido al modelo de diseño flexible.
-  justifyContent: "space-between", // Distribuye el espacio disponible entre los elementos hijos, colocando el máximo espacio posible entre ellos.
-  alignItems: "center", // Centra verticalmente los elementos hijos.
-  padding: "1rem", // Agrega un relleno de 1 rem alrededor del contenido del header.
-  background: "#000", // Fondo negro
-  color: "#fff", // Texto blanco
-  height: "2rem", //Puedes ajustar la altura según tus necesidades de arriba-abajo
-  //width: '100%', // Asegura que el ancho del header sea del 100%
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "1rem",
+  background: "#000",
+  color: "#fff",
+  height: "2rem",
 };
 
 const leftSection = {
-  marginRight: "auto", // Empuja el elemento hacia la derecha tanto como sea posible.
-  display: "flex", // Hace que los elementos hijos dentro de leftSection se coloquen en una fila.
-  gap: "20px", // Agrega un espacio de 20 píxeles entre los elementos hijos.
+  marginRight: "auto",
+  display: "flex",
+  gap: "20px",
 };
 
 const rightSection = {
-  marginLeft: "auto", // Empuja el elemento hacia la izquierda tanto como sea posible.
-  display: "flex", // Hace que los elementos hijos dentro de rightSection se coloquen en una fila.
-  gap: "20px", // Agrega un espacio de 20 píxeles entre los elementos hijos.
+  marginLeft: "auto",
+  display: "flex",
+  gap: "20px",
 };
 
 const linkStyle = {
-  textDecoration: "none", //  Elimina la decoración de subrayado de los enlaces.
-  color: "#fff", //Establece el color del texto en blanco.
+  textDecoration: "none",
+  color: "#fff",
 };
 
-// estilos del SearchBar
 const searchBarStyle = {
   display: "flex",
-  alignItems: "center", // Centra los elementos verticalmente
+  alignItems: "center",
   backgroundColor: "#333",
   borderRadius: "4px",
   padding: "8px",
   height: "1rem",
 };
-// Estilo del input del SearchBar
+
 const inputStyle = {
   border: "none",
   outline: "none",

@@ -1,75 +1,93 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav style={navbarStyle}>
       <div style={leftSection}>
         <span>Seguinos en</span>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://thumbs.dreamstime.com/z/logotipo-de-instagram-blanco-y-negro-cuadrado-en-con-archivo-ai-vectorial-f%C3%A1cil-editar-fondo-alta-resoluci%C3%B3n-192780656.jpg"
-          alt="instagram_image"
-          style={imageStyle}
-        />
+        <a
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://thumbs.dreamstime.com/z/logotipo-de-instagram-blanco-y-negro-cuadrado-en-con-archivo-ai-vectorial-f%C3%A1cil-editar-fondo-alta-resoluci%C3%B3n-192780656.jpg"
+            alt="instagram_image"
+            style={imageStyle}
+          />
         </a>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://thumbs.dreamstime.com/z/icono-del-logotipo-de-facebook-en-blanco-y-negro-alta-resoluci%C3%B3n-con-fondo-archivo-pasos-vectoriales-disponible-para-descarga-175771686.jpg"
-          alt="facebook_image"
-          style={imageStyle}
-        />
+        <a
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://thumbs.dreamstime.com/z/icono-del-logotipo-de-facebook-en-blanco-y-negro-alta-resoluci%C3%B3n-con-fondo-archivo-pasos-vectoriales-disponible-para-descarga-175771686.jpg"
+            alt="facebook_image"
+            style={imageStyle}
+          />
         </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-        <img
-          src="https://thumbs.dreamstime.com/z/icono-del-logotipo-de-youtube-en-blanco-y-negro-alta-resoluci%C3%B3n-archivo-pasos-vectoriales-tambi%C3%A9n-disponible-para-descargas-175792602.jpg"
-          alt="youtube_image"
-          style={imageStyle}
-        />
+        <a
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="https://thumbs.dreamstime.com/z/icono-del-logotipo-de-youtube-en-blanco-y-negro-alta-resoluci%C3%B3n-archivo-pasos-vectoriales-tambi%C3%A9n-disponible-para-descargas-175792602.jpg"
+            alt="youtube_image"
+            style={imageStyle}
+          />
         </a>
       </div>
       <div style={rightSection}>
-        <span><Link to="/sucursales" style={linkStyle}>Sucursales</Link></span>
-        <span><Link to="/ayuda" style={linkStyle}>Centro de ayuda</Link></span>
+        <span>
+          <Link to="/sucursales" style={linkStyle}>
+            Sucursales
+          </Link>
+        </span>
+        <span>
+          <Link to="/ayuda" style={linkStyle}>
+            Centro de ayuda
+          </Link>
+        </span>
       </div>
     </nav>
   );
 };
 
-// Estilos para el Navbar y sus secciones
 const navbarStyle = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  padding: '0.5rem',
-  background: '#333',
-  color: '#fff',
-  height: '2rem',
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "0.5rem",
+  background: "#333",
+  color: "#fff",
+  height: "2rem",
 };
 
 const leftSection = {
-  marginRight: 'auto',
+  marginRight: "auto",
 };
 
 const rightSection = {
-  display: 'flex',
-  gap: '20px',
+  display: "flex",
+  gap: "20px",
 };
 
 const linkStyle = {
-  textDecoration: 'none', //  Elimina la decoración de subrayado de los enlaces.
-  color: '#fff', //Establece el color del texto en blanco.
+  textDecoration: "none",
+  color: "#fff",
 };
 
-// Imagen
 const imageStyle = {
-    width: 'auto', // El ancho se ajustará automáticamente al tamaño original de la imagen
-    height: '1.5rem', // Puedes ajustar la altura según tus preferencias
-    marginLeft: '10px', // Espacio entre el texto y la imagen
-    borderRadius: '50%', // Redondea las esquinas de la imagen
-    borderBottomLeftRadius: '120%', // Ajusta el redondeo de la parte inferior izquierda
-    borderBottomRightRadius: '120%', // Ajusta el redondeo de la parte inferior derecha
-    borderTopRightRadius: '120%',
-    borderTopLeftRadius: '120%',
+  width: "auto",
+  height: "1.5rem",
+  marginLeft: "10px",
+  borderRadius: "50%",
+  borderBottomLeftRadius: "120%",
+  borderBottomRightRadius: "120%",
+  borderTopRightRadius: "120%",
+  borderTopLeftRadius: "120%",
 };
 
-export {Navbar};
+export { Navbar };

@@ -68,21 +68,19 @@ const Login = () => {
   );
 };
 
-// Estilos para el contenedor del formulario
 const formContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh", // Ajusta la altura según tus necesidades
+  height: "100vh",
 };
 
-// Estilos para el formulario
 const formStyle = {
   border: "1px solid #ccc",
   padding: "20px",
   borderRadius: "8px",
 };
-// Estilos para los campos de entrada (inputs)
+
 const inputStyle = {
   display: "block",
   width: "100%",

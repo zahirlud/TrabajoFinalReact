@@ -1,30 +1,29 @@
 import React from "react";
-import { Layout } from "../layout";
 
 const Home = () => {
   const imageUrl =
-    "https://img.freepik.com/fotos-premium/3d-conjunto-electrodomesticos-sobre-fondo-blanco_751108-1072.jpg?w=740";
+    "https://lagamablanca.es/modules/posslideshows/images/35be1fef58aed2a66dc6950b55337e01ab176742_01.png";
   return (
-    <div>
-      <div style={contentStyle}>
-        <div style={mainContentStyle}>
-          <h1>Bienvenido a E-commerce</h1>
-        </div>
-        <img src={imageUrl} alt="Imagen" />
-      </div>
+    <div style={contentStyle}>
+      <div style={mainContentStyle}></div>
+      <img style={imageStyle} src={imageUrl} alt="Imagen" />
     </div>
   );
 };
 
-// Estilo para el contenido principal
 const mainContentStyle = {
-  padding: "100px",
-  // Agrega más estilos según sea necesario
+  padding: "50px",
 };
 
 const contentStyle = {
   display: "flex",
-  justifyContent: "flex-end", // Alinea el contenido a la derecha
-  padding: "20px", // Añade un poco de espacio alrededor del contenido
+  justifyContent: "flex-end",
+};
+
+const imageStyle = {
+  width: "100%",
+  height: "auto",
+  objectFit: "cover",
+  objectPosition: "left bottom",
 };
 export { Home };

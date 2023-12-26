@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Layout } from "../layout";
 
 const Helper = () => {
   const [isFormSubmitted, setFormSubmitted] = useState(false);
@@ -140,35 +139,33 @@ const Helper = () => {
   );
 };
 
-// Estilo de mensaje
-
 const messageStyle = {
   marginTop: "20px",
   color: "green",
-  textAlign: "center", // Centra el mensaje
-  fontSize: "1.5em", // Tamaño de fuente más grande
-  fontWeight: "bold", // Texto en negrita
+  textAlign: "center",
+  fontSize: "1.5em",
+  fontWeight: "bold",
 };
 
-// Estilos para el contenedor del formulario
 const formContainerStyle = {
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
-  height: "100vh", // Ajusta la altura según tus necesidades
-  overflowY: "auto", // Habilita el desplazamiento vertical
-  padding: "20px", // Agregado un relleno al contenedor
+  height: "100vh",
+  overflowY: "auto",
+  padding: "20px",
 };
 
-// Estilos para el formulario
 const formStyle = {
   border: "1px solid #ccc",
-  padding: "40px",
+  padding: "50px",
   borderRadius: "8px",
   marginBottom: "100px",
-  marginTop: "300px",
+  marginTop: "400px",
+  width: "60%",
+  margin: "auto",
 };
-// Estilos para los campos de entrada (inputs)
+
 const inputStyle = {
   display: "block",
   width: "100%",

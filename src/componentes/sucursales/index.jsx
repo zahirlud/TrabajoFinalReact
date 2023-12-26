@@ -2,16 +2,18 @@ import React from "react";
 
 const contentContainerStyle = {
   display: "flex",
-  flexDirection: "row", // Para alinear los elementos en una fila
-  justifyContent: "space-between", // Para espaciar los elementos en la fila
+  flexDirection: "column",
+  justifyContent: "space-between",
+  alignItems: "center", // Centra verticalmente
+  marginBottom: "100px",
 };
 
 const listContainerStyle = {
-  width: "40%", // Ajusta según sea necesario
+  width: "40%",
 };
 
 const imageStyle = {
-  width: "30%", // Ajusta según sea necesario
+  width: "30%",
   height: "auto",
   marginBottom: "100px",
 };
@@ -129,11 +131,6 @@ const Sucursales = () => {
             </li>
           </ul>
         </div>
-        <img
-          src="https://http2.mlstatic.com/storage/sc-seller-journey-backoffice/images-assets/234940675890-Sucursales--una-herramienta-para-mejorar-la-gesti-n-de-tus-puntos-de-venta.png"
-          alt="imagen-sucursal"
-          style={imageStyle}
-        />
       </div>
     </div>
   );
