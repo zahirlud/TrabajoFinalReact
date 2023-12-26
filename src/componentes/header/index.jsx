@@ -27,7 +27,7 @@ const Header = () => {
           Categorias
         </Link>
         <Link to="/productos" style={linkStyle}>
-          Todos los Productos
+          Productos
         </Link>
         <Link to="/about" style={linkStyle}>
           Acerca de
