@@ -2,11 +2,21 @@ import React, { useEffect, useState } from "react";
 import { ProductCard } from "./ProductCard";
 import { getProducts } from "../../Services/products";
 
+const settingStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  fontSize: "2em",
+};
+
 const containerStyle = {
   display: "flex",
   justifyContent: "space-around",
   marginTop: "20px",
   flexWrap: "wrap",
+  marginLeft: "200px",
+  marginRight: "200px",
 };
 
 const headingStyle = {
@@ -14,6 +24,7 @@ const headingStyle = {
   fontWeight: "bold",
   marginBottom: "20px",
   marginLeft: "20px",
+  marginLeft: "250px",
 };
 
 const Productos = () => {
@@ -36,14 +47,14 @@ const Productos = () => {
   }, []);
 
   if (loading) {
-    return <p>Cargando Productos...</p>;
+    return <div style={settingStyle}>Cargando Productos...</div>;
   }
   if (!products) {
-    return <div>Cargando datos...</div>;
+    return <div style={settingStyle}>Cargando datos...</div>;
   }
 
   if (error) {
-    return <div>Error cargando datos</div>;
+    return <div style={settingStyle}>Error cargando datos</div>;
   }
 
   return (

@@ -10,8 +10,24 @@ const CarritoCard = ({ carrito }) => {
     console.log(e);
   };
 
-  const buttonStyle = {
+  const botonAgregarStyle = {
+    backgroundColor: "#ffA500",
+    color: "#fff",
+    padding: "10px 15px",
+    border: "none",
+    borderRadius: "5px",
     cursor: "pointer",
+    fontWeight: "bold",
+  };
+
+  const botonQuitarStyle = {
+    backgroundColor: "#ff0000",
+    color: "#fff",
+    padding: "10px 15px",
+    border: "none",
+    borderRadius: "5px",
+    cursor: "pointer",
+    fontWeight: "bold",
   };
 
   const productoItemStyle = {
@@ -46,7 +62,11 @@ const CarritoCard = ({ carrito }) => {
             <p>{item.name}</p>
             <p>Precio: {item.price}</p>
             <p>Cantidad: {item.quantity}</p>
-            <button id={item.id} onClick={deleteProduct}>
+            <button
+              style={botonQuitarStyle}
+              id={item.id}
+              onClick={deleteProduct}
+            >
               Quitar del carrito
             </button>
           </div>
@@ -63,7 +83,7 @@ const CarritoCard = ({ carrito }) => {
       )}
       {carrito && carrito.length > 0 && (
         <h2>
-          <button style={buttonStyle}>Finalizar Compra</button>
+          <button style={botonAgregarStyle}>Finalizar Compra</button>
         </h2>
       )}
     </div>

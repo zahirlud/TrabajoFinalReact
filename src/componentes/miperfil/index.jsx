@@ -1,6 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { getUsers } from "../../Services/users";
 
+const settingStyle = {
+  display: "flex",
+  justifyContent: "center",
+  alignItems: "center",
+  height: "100vh",
+  fontSize: "2em",
+};
+
 const containerStyle = {
   display: "flex",
   justifyContent: "space-around",
@@ -24,17 +32,24 @@ const imageStyle = {
 
 const MiPerfil = () => {
   const [profile, setProfile] = useState({});
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
+    setLoading(true);
     getUsers({ userId: 3 })
       .then((res) => {
         setProfile(res);
+        setLoading(false);
       })
       .catch((e) => {
         new Error(e);
         console.log(e.response);
       });
   }, []);
+
+  if (loading) {
+    return <div style={settingStyle}>Cargando perfil...</div>;
+  }
 
   const { id, email, password, name, role, avatar } = profile;
 

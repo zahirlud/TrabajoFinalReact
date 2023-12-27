@@ -52,12 +52,24 @@ const Header = () => {
             <Link to="/miperfil" style={linkStyle}>
               Mi Perfil
             </Link>
-            <button onClick={handleLogOut}>Cerrar Sesión</button>
+            <button style={botonAgregarStyle} onClick={handleLogOut}>
+              Cerrar Sesión
+            </button>
           </>
         )}
       </div>
     </header>
   );
+};
+
+const botonAgregarStyle = {
+  backgroundColor: "#ff0000",
+  color: "#fff",
+  padding: "10px 15px",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontWeight: "bold",
 };
 
 const headerStyle = {
@@ -77,6 +89,8 @@ const leftSection = {
 };
 
 const rightSection = {
+  justifyContent: "space-between",
+  alignItems: "center",
   marginLeft: "auto",
   display: "flex",
   gap: "20px",

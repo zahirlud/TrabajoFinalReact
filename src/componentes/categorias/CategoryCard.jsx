@@ -7,9 +7,19 @@ const cardStyle = {
   width: "200px",
 };
 
+const botonAgregarStyle = {
+  backgroundColor: "#ffA500",
+  color: "#fff",
+  padding: "10px 15px",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontWeight: "bold",
+};
+
 const imageStyle = {
   width: "100%",
-  height: "auto",
+  height: "150px",
   marginBottom: "10px",
   borderRadius: "8px",
 };
@@ -19,7 +29,7 @@ const CategoryCard = ({ key, name, image }) => {
     <div style={cardStyle} key={key}>
       <img src={image} alt="imagen1" style={imageStyle} />
       <p>{name}</p>
-      <button>Ver productos</button>
+      <button style={botonAgregarStyle}>Ver productos</button>
     </div>
   );
 };

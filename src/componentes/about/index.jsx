@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <>
-      <div>
+      <div style={{ marginLeft: "50px", marginRight: "50px" }}>
         <h1>
           <strong>¿Quienes somos?</strong>
         </h1>

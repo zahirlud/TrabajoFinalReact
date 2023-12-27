@@ -16,6 +16,16 @@ const imageStyle = {
   borderRadius: "8px",
 };
 
+const botonAgregarStyle = {
+  backgroundColor: "#ffA500",
+  color: "#fff",
+  padding: "10px 15px",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  fontWeight: "bold",
+};
+
 const ProductCard = ({ id, title, price, description, category, images }) => {
   const { addToCart } = useCart();
   const onAgregarAlCarrito = (e) => {
@@ -29,7 +39,9 @@ const ProductCard = ({ id, title, price, description, category, images }) => {
       <p>Precio: ${price}</p>
       <p>Descripción: {description}</p>
       <p>Categoría: {category}</p>
-      <button onClick={onAgregarAlCarrito}>Agregar al carrito</button>
+      <button style={botonAgregarStyle} onClick={onAgregarAlCarrito}>
+        Agregar al carrito
+      </button>
     </div>
   );
 };
